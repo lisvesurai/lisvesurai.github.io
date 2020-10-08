@@ -192,20 +192,20 @@ header {
         top: .625rem;
         transition: top .3s ease-in .3s;
     }
-    .nav--open .nav__toggleButton {
+    .nav--open+.nav__toggleButton {
         background: rgba(0, 0, 0, 0);
         transition: background .3s ease-in;
     }
-    .nav--open .nav__toggleIcon {
+    .nav--open+.nav__toggleButton .nav__toggleIcon {
         transform: rotate(-135deg);
         transition: transform .3s ease-in .3s;
     }
-    .nav--open .nav__toggleIcon:before {
+    .nav--open+.nav__toggleButton .nav__toggleIcon:before {
         top: 0;
         transform: rotate(270deg);
         transition: top .3s ease-in, transform .3s ease-in .3s;
     }
-    .nav--open .nav__toggleIcon:after {
+    .nav--open+.nav__toggleButton .nav__toggleIcon:after {
         top: 0;
         opacity: 0;
         transition: top .3s ease-in, opacity .3s ease-in .3s;
