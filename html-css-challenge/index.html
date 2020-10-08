@@ -25,21 +25,19 @@
     <meta name="theme-color" content="#ffffff">
 </head>
 <body>
-
     <header>
-        <input id="nav-toggle" type="checkbox" name="nav-toggle">
-        <nav>
-            <label onclick="selectNav(this);">Cute Dogs</label>
-            <label onclick="selectNav(this);">Funny Dogs</label>
-            <label onclick="selectNav(this);">Friendly Dogs</label>
-            <label onclick="selectNav(this);">Sad Dogs</label>
-            <label onclick="selectNav(this);">Angry Dogs</label>
-            <label onclick="selectNav(this);">Smiley Dogs</label>
+        <nav id="nav" class="nav">
+            <label class="nav__item" onclick="selectNav(this);">Cute Dogs</label>
+            <label class="nav__item" onclick="selectNav(this);">Funny Dogs</label>
+            <label class="nav__item" onclick="selectNav(this);">Friendly Dogs</label>
+            <label class="nav__item" onclick="selectNav(this);">Sad Dogs</label>
+            <label class="nav__item" onclick="selectNav(this);">Angry Dogs</label>
+            <label class="nav__item" onclick="selectNav(this);">Smiley Dogs</label>
         </nav>
-        <label for="nav-toggle" class="toggle-button"><i class="toggle-icon"></i></label>
+        <label class="nav__toggleButton" onclick="toggleNav();"><i class="nav__toggleIcon"></i></label>
     </header>
 
-    <section id="main" class="home"></section>
+    <section id="main" class="main main__home"></section>
 
     <script src="js/main.js" language="JavaScript"></script>
 </body>
